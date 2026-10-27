@@ -170,12 +170,12 @@ function Index() {
         {/* PROJETOS */}
         <section id="projetos" className="border-y border-border bg-card/40 py-24">
           <div className="mx-auto max-w-7xl px-5">
-            <SectionHead eyebrow="Projetos demonstrativos" title="Veja o que podemos construir para sua empresa." text="Conheça alguns exemplos de como uma presença digital profissional pode ser apresentada para diferentes tipos de negócio." />
+            <SectionHead eyebrow="Projetos" title="Veja o que podemos construir para sua empresa." text="Conheça um projeto já publicado no ar e demonstrações de como uma presença digital profissional pode ser apresentada para diferentes tipos de negócio." />
             <div className="grid gap-6 md:grid-cols-2">
               {PROJECTS.map((p) => (
                 <article key={p.title} className="card-elevated group overflow-hidden">
                   <div className="relative overflow-hidden">
-                    <img src={p.image} width={1280} height={896} loading="lazy" alt={`Demonstração de site para ${p.title.toLowerCase()}`} className="h-auto w-full transition-transform duration-700 group-hover:scale-105" />
+                    <img src={p.image} width={1280} height={896} loading="lazy" alt={p.isDemo ? `Demonstração conceitual de site para ${p.title.toLowerCase()}` : `Site criado para ${p.title}`} className="h-auto w-full transition-transform duration-700 group-hover:scale-105" />
                     {p.isDemo && (
                       <span className="absolute left-4 top-4 rounded-full border border-border bg-background/85 px-3 py-1 text-xs font-semibold backdrop-blur">Demonstração conceitual</span>
                     )}
@@ -186,7 +186,7 @@ function Index() {
                     <p className="mt-3 text-muted-foreground">{p.description}</p>
                     {p.technologies?.length ? <p className="mt-3 text-xs text-muted-foreground">{p.technologies.join(" · ")}</p> : null}
                     <div className="mt-6 flex flex-wrap gap-3">
-                      {p.liveUrl && <Button asChild variant="glass" size="lg"><a href={p.liveUrl} {...ext}>Ver demonstração</a></Button>}
+                      {p.liveUrl && <Button asChild variant="glass" size="lg"><a href={p.liveUrl} {...ext}>{p.isDemo ? "Ver demonstração" : "Ver site no ar"}</a></Button>}
                       <Button asChild variant="hero" size="lg"><a href={whatsappLink(p.whatsappMessage)} {...ext}>Quero um site parecido</a></Button>
                     </div>
                   </div>

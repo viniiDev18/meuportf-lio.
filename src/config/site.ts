@@ -3,6 +3,8 @@ import restaurante from "@/assets/demo-restaurante.jpg";
 import barbearia from "@/assets/demo-barbearia.jpg";
 import servicos from "@/assets/demo-servicos.jpg";
 import loja from "@/assets/demo-loja.jpg";
+import viniciusFoto from "@/assets/vinicius-foto.png.asset.json";
+import projetoLomonacoGomes from "@/assets/projeto-lomonaco-gomes.png.asset.json";
 
 export const WHATSAPP_NUMBER = "5585981463662";
 export const WHATSAPP_BASE = `https://wa.me/${WHATSAPP_NUMBER}`;
@@ -25,8 +27,7 @@ export const SOCIAL_LINKS: { label: string; href: string }[] = [
   // { label: "Instagram", href: "https://instagram.com/..." },
 ];
 
-// Set to an image import/URL when you have a real professional photo.
-export const PROFILE_PHOTO: string | null = null;
+export const PROFILE_PHOTO: string | null = viniciusFoto.url;
 
 export const NAV_LINKS = [
   { id: "inicio", label: "Início" },
@@ -50,6 +51,17 @@ export type Project = {
 };
 
 export const PROJECTS: Project[] = [
+  {
+    title: "Lomonaco & Gomes",
+    category: "Escritório de advocacia",
+    description:
+      "Site institucional com apresentação do escritório, áreas de atuação, diferenciais, avaliações e contato direto pelo WhatsApp. Publicado e disponível para acesso.",
+    image: projetoLomonacoGomes.url,
+    isDemo: false,
+    liveUrl: "https://lomonacoegomes.lovable.app/",
+    whatsappMessage:
+      "Olá, Vinícius! Vi o site que você fez para o Lomonaco & Gomes e gostaria de um site para o meu negócio.",
+  },
   {
     title: "Restaurante",
     category: "Gastronomia",
