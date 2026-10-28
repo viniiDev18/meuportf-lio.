@@ -3,8 +3,8 @@ import restaurante from "@/assets/demo-restaurante.jpg";
 import barbearia from "@/assets/demo-barbearia.jpg";
 import servicos from "@/assets/demo-servicos.jpg";
 import loja from "@/assets/demo-loja.jpg";
-import viniciusFoto from "@/assets/vinicius-foto.png.asset.json";
-import projetoLomonacoGomes from "@/assets/projeto-lomonaco-gomes.png.asset.json";
+import viniciusFoto from "@/assets/vinicius-foto.png";
+import projetoLomonacoGomes from "@/assets/projeto-lomonaco-gomes.png";
 
 export const WHATSAPP_NUMBER = "5585981463662";
 export const WHATSAPP_BASE = `https://wa.me/${WHATSAPP_NUMBER}`;
