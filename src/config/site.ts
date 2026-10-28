@@ -56,7 +56,7 @@ export const PROJECTS: Project[] = [
     category: "Escritório de advocacia",
     description:
       "Site institucional com apresentação do escritório, áreas de atuação, diferenciais, avaliações e contato direto pelo WhatsApp. Publicado e disponível para acesso.",
-    image: projetoLomonacoGomes.url,
+    image: foto.PNG,
     isDemo: false,
     liveUrl: "https://lomonacoegomes.lovable.app/",
     whatsappMessage:
