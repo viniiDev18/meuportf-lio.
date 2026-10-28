@@ -27,7 +27,7 @@ export const SOCIAL_LINKS: { label: string; href: string }[] = [
   // { label: "Instagram", href: "https://instagram.com/..." },
 ];
 
-export const PROFILE_PHOTO: string | null = viniciusFoto.url;
+export const PROFILE_PHOTO: string | null = viniciusFoto;
 
 export const NAV_LINKS = [
   { id: "inicio", label: "Início" },
@@ -56,7 +56,7 @@ export const PROJECTS: Project[] = [
     category: "Escritório de advocacia",
     description:
       "Site institucional com apresentação do escritório, áreas de atuação, diferenciais, avaliações e contato direto pelo WhatsApp. Publicado e disponível para acesso.",
-    image: projetoLomonacoGomes.url,
+    image: projetoLomonacoGomes,
     isDemo: false,
     liveUrl: "https://lomonacoegomes.lovable.app/",
     whatsappMessage:
